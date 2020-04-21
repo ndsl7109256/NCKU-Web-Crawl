@@ -14,3 +14,4 @@ Use python selenium to get the course
 
 ## 選課
 由於選課時，server 忙碌造成擁塞，會讓 selenium 無法取得物件產生 exception ，需要做 try catch 的動作，讓網頁可以等到正常時再動作。
+而且其選課的介面是包在另外一個 html 裡面所以必須要先 switch frame 到目標 html ，才能找到目標物件
